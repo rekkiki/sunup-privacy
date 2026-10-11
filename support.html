@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SunUp Support</title>
+<meta name="description" content="Help with SunUp — locking apps, alarms, subscriptions and getting in touch.">
+<style>
+  :root {
+    --bg: #0B0B0B;
+    --surface: #161616;
+    --line: #2A2A2A;
+    --text: #F7F5F0;
+    --muted: #9B9A95;
+    --faint: #6A6A66;
+    --accent: #FDC72E;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 0 72px; }
+
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 36px; }
+  .mark { width: 40px; height: 40px; flex: 0 0 40px; }
+  h1 { font-size: 30px; line-height: 1.2; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
+  .sub { color: var(--faint); font-size: 14px; margin: 6px 0 0; }
+
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin: 0 0 40px;
+  }
+  .contact p { margin: 0; color: var(--muted); }
+  .contact a { color: var(--accent); font-weight: 600; font-size: 19px; }
+
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 30px 0 6px;
+  }
+  p { margin: 0 0 14px; color: var(--muted); }
+  a { color: var(--accent); }
+  ol { color: var(--muted); padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--faint);
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 36px 0 56px; }
+    h1 { font-size: 25px; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M50 26a24 24 0 0 1 24 24H26a24 24 0 0 1 24-24z" fill="#FDC72E"/>
+      <rect x="14" y="56" width="72" height="7" rx="3.5" fill="#FDC72E"/>
+      <rect x="28" y="70" width="44" height="6" rx="3" fill="#C79A22"/>
+      <rect x="38" y="82" width="24" height="5" rx="2.5" fill="#8A6B17"/>
+    </svg>
+    <div>
+      <h1>SunUp Support</h1>
+      <p class="sub">Your phone stays locked until your morning is done.</p>
+    </div>
+  </header>
+
+  <div class="contact">
+    <p>Questions, problems or ideas — write to me and I'll reply.</p>
+    <p style="margin-top:8px"><a href="mailto:app.sunup@proton.me">app.sunup@proton.me</a></p>
+  </div>
+
+  <h2>The apps I chose aren't being locked</h2>
+  <p>
+    SunUp needs Screen Time permission to shield apps. Check it is allowed in
+    iOS Settings &rsaquo; Screen Time, then open SunUp &rsaquo; Settings and confirm
+    "Screen Time" says Allowed. If it says Not Allowed, tap it to reopen the
+    permission.
+  </p>
+
+  <h2>Can SunUp lock my whole phone?</h2>
+  <p>
+    No, and nothing on iOS can. SunUp shields the apps you pick, between your wake
+    time and your cutoff. Calls, messages, the camera and everything you didn't
+    pick keep working. It is a strong speed bump, not a vault.
+  </p>
+
+  <h2>My alarm didn't go off</h2>
+  <p>
+    On iOS 26.1 and later SunUp uses a real alarm that breaks through silent mode
+    and Focus. Below that, iOS gives apps no way to do this, so SunUp sends a
+    notification instead — which respects silent mode and can be missed. SunUp
+    tells you which one you have on the wake time screen. Check notifications are
+    allowed in SunUp &rsaquo; Settings.
+  </p>
+
+  <h2>I'm locked out and need my phone now</h2>
+  <p>
+    Open SunUp and use Emergency Access. There is a short wait, then the lock
+    lifts. The morning is still recorded, as an unfinished one. There is also a
+    cutoff time, after which the lock lifts by itself, so you are never shut out
+    all day.
+  </p>
+
+  <h2>I paid but don't have Pro</h2>
+  <p>
+    Open SunUp &rsaquo; Settings &rsaquo; Subscription and tap Restore Purchases. That
+    asks Apple for anything bought with your Apple Account, including on another
+    device. If it still doesn't appear, email me with the date of purchase.
+  </p>
+
+  <h2>How do I cancel?</h2>
+  <p>
+    Subscriptions are managed by Apple, not by SunUp:
+  </p>
+  <ol>
+    <li>Open iOS Settings</li>
+    <li>Tap your name at the top</li>
+    <li>Tap Subscriptions</li>
+    <li>Choose SunUp, then Cancel Subscription</li>
+  </ol>
+  <p>
+    Cancelling during a free trial means you are not charged. You keep access
+    until the period you have paid for ends.
+  </p>
+
+  <h2>Deleting your data</h2>
+  <p>
+    Everything SunUp stores lives on your iPhone. Deleting the app removes all of
+    it — your routine, your history and your streak. There is no account and
+    nothing stored on a server. See the
+    <a href="./">privacy policy</a>.
+  </p>
+
+  <footer>
+    SunUp — Focus &amp; Morning Routine.
+    <a href="./">Privacy policy</a>
+  </footer>
+
+</div>
+</body>
+</html>
